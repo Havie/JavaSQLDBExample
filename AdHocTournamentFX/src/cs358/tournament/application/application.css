@@ -1,0 +1,12 @@
+.text-field:error {
+  -fx-text-box-border: red;
+  -fx-focus-color: red;
+}
+.choice-box:error {
+  -fx-border-color: red;
+  -fx-border-width: 1 1 1 1;
+}
+.radio-button:error {
+  -fx-border-color: red;
+  -fx-border-width: 1 1 1 1;
+}

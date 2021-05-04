@@ -1,0 +1,20 @@
+Build instructions:
+
+Program Requirements:
+** MAKE SURE TO HAVE JRE 1.8.0 or higher installed **
+- Download JavaFX
+- Download mariaDB 
+
+1 - After downloading project files, open in eclipse and import Java Project folder into Package Explorer
+2 - Right click on Java Project folder and select "Export"
+3 - Click and open Java folder on window prompt and select "Runnable JAR file"
+4 - In "Launch Configuration" select the Main class in the AdHocTournamentFX project folder
+5 - In "Export Destination" select where to save the .jar file to
+6 - In "Library handling" select "Extract required libraries into generated JAR"
+7 - Click Finish
+
+** You now have the exported .JAR file **
+
+Running the program in command prompt:
+
+1 - Open up command prompt and type in the following:  java --module-path <javaFX folder directory> --add-modules javafx.controls,javafx.fxml -jar <.JAR file directory>

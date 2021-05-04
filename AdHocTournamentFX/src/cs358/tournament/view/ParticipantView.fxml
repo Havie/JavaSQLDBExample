@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs358.tournament.controller.ParticipantEditorController">
+   <children>
+      <ScrollPane prefHeight="374.0" prefWidth="406.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="354.0" prefWidth="389.0">
+               <children>
+                  <Button layoutX="110.0" layoutY="143.0" mnemonicParsing="false" onAction="#cancelParticipantChanges" text="Cancel" />
+                  <Button layoutX="174.0" layoutY="143.0" mnemonicParsing="false" onAction="#saveParticipantChanges" text="Save" />
+                  <Label layoutX="39.0" layoutY="47.0" prefHeight="17.0" prefWidth="66.0" text="First Name:" />
+                  <Label layoutX="40.0" layoutY="76.0" text="Last Name:" />
+                  <Label layoutX="26.0" layoutY="107.0" text="Organization:" />
+                  <TextField id="firstname" fx:id="firstname" layoutX="110.0" layoutY="43.0" />
+                  <TextField id="lastname" fx:id="lastname" layoutX="110.0" layoutY="72.0" />
+                  <TextField id="organization" fx:id="organization" layoutX="110.0" layoutY="103.0" />
+                  <Button layoutX="225.0" layoutY="143.0" mnemonicParsing="false" onAction="#loadParticipantFromDatabase" text="Load" />
+                  <Label layoutX="84.0" layoutY="16.0" text="ID:" />
+                  <TextField id="participantId" fx:id="participantId" layoutX="110.0" layoutY="12.0" prefHeight="25.0" prefWidth="65.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
