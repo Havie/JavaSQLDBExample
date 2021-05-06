@@ -1,0 +1,12 @@
+Javas complex library/module/VM installation explanation:
+
+Poor planning & integration by eclipse is really my best answer.  It is no wonder that JavaFX is not widely adopted.  We did already add the lib to the "Module Path" and that allows us to compile.  But, the runtime will fail if you don't put in the vm arguments.  I would have to research more to give you a better answer.
+
+apparently the runtime environment needs to load the libraries to be able to execute the JavaFX code.   So, I assume that these libraries are operating system specific whereas the Java libraries that are used in the jars that we create to make programs are all OS independent and are executed by the runtime.
+
+
+
+Java can run on any OS because you install a JRE (Java Run-time Environment) that runs as a virtual machine (thus the VM)
+Class path is the path where the JRE looks for Java libraries to load into the Runtime.
+The eclipse e(fx)clipse marketplace gives you the JavaFX project structure so that you can create new JavaFX projects.  I guess maybe they make you put in the VM args because they don't know where the JavaFX library is stored.  But, it really could have been designed better to designate the JavaFX and the eclipse to handle the -vm and -classpath args.
+The module-path is a replacement for the classpath for the runtime.  It's an attempt to replicate the Module hierarchy used in Maven build systems.  I find that if you mix the two eclipse can't handle it, but doesn't prevent it.
